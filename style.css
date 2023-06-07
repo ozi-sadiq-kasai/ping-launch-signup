@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: 'Libre Franklin', sans-serif;
+}
+.launch__div{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+.launch__span{
+  font-weight: 300;
+  color:  hsl(0, 0%, 59%);
+}
+.launch__para{
+  padding: 10px 0 20px;
+  font-size: 0.9rem;
+  color: hsl(209, 33%, 12%);
+}
+.launch__image{
+  width: 40%;
+  margin-top: 50px;
+}
+
+.socials{
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  margin: 10px 0;
+}
+.socials li{
+  margin-right: 15px;
+  border: 1px solid hsl(0, 0%, 59%);
+  color: hsl(223, 87%, 63%);
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+}
+.socials li:hover{
+  background-color: hsl(223, 87%, 63%);
+  color: white;
+}
+.brand__logo{
+  width: 60px;
+  margin:30px 0 20px;
+}
+.input,.input__btn{
+  padding:15px;
+  border-radius: 30px;
+  padding-right: 150px;
+  outline: none;
+  border: 1px solid hsl(223, 100%, 88%);
+  margin: 10px 0;
+}
+::placeholder { 
+  color:hsl(0, 0%, 59%);
+  opacity: 1; /* Firefox */
+}
+.input__btn{
+  margin-left: 10px;
+  background-color:  hsl(223, 87%, 63%);
+  color: white;
+  padding:15px 40px;
+  box-shadow: -2px 5px 5px 0px rgba(233,233,250,0.75);
+}
+.input__error{
+  color: red;
+  font-size: 0.7rem;
+  position: absolute;
+  top: 217px;
+  left: 410px;
+  display: none;
+}
+
+/* mobile site */
+@media  screen and (max-width:1300px) {
+  .input__div{
+    display: flex;
+    flex-direction: column;
+  }
+  .launch__image{
+    width: 70%;
+    margin-top: 50px;
+  }
+  .socials{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    margin:10rem 0;
+  }
+  
+}
