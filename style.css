@@ -87,7 +87,7 @@ body{
 }
 
 /* mobile site */
-@media  screen and (max-width:1300px) {
+@media  screen and (max-width:950px) {
   .input__div{
     display: flex;
     flex-direction: column;
